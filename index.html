@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>范阮越姜 | 個人求職履歷網站</title>
+<style>
+:root { --primary: #2c3e50; --secondary: #3498db; --accent: #e67e22; --bg: #f4f7f9; }
+* { box-sizing: border-box; scroll-behavior: smooth; }
+body { font-family: 'PingFang TC', 'Microsoft JhengHei', sans-serif; margin: 0; background: var(--bg); color: #333; line-height: 1.8; }
+
+nav { position: fixed; top: 0; width: 100%; background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); box-shadow: 0 2px 10px rgba(0,0,0,0.05); z-index: 1000; display: flex; justify-content: center; padding: 15px 0; }
+nav a { text-decoration: none; color: var(--primary); margin: 0 15px; font-weight: bold; font-size: 0.95em; transition: 0.3s; }
+nav a:hover { color: var(--secondary); }
+
+header { height: 60vh; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #2c3e50 0%, #4ca1af 100%); color: white; text-align: center; flex-direction: column; padding-top: 60px; }
+header h1 { font-size: 3.5em; margin: 0; letter-spacing: 5px; }
+header p { font-size: 1.2em; opacity: 0.9; margin-top: 10px; }
+
+.container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
+section { background: white; padding: 50px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); margin-bottom: 50px; padding-top: 90px; }
+h2 { font-size: 2.2em; color: var(--primary); border-left: 8px solid var(--secondary); padding-left: 20px; margin-bottom: 35px; }
+h3 { color: var(--secondary); border-bottom: 1px solid #eee; padding-bottom: 10px; margin-top: 30px; }
+
+.content-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+.info-card { background: #f8fabb; padding: 25px; border-radius: 15px; border: 1px solid #e1e8ed; transition: 0.3s; }
+.info-card:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+
+/* 3 Ảnh Gallery */
+.photo-gallery { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px; margin: 30px 0; }
+.photo-gallery img { width: 100%; height: 250px; object-fit: cover; border-radius: 12px; border: 3px solid #fff; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+
+.skill-tag { background: #e8f6ff; color: #2980b9; padding: 6px 15px; border-radius: 50px; font-weight: bold; margin: 5px; display: inline-block; border: 1px solid #d0e9ff; }
+.highlight { color: var(--accent); font-weight: bold; }
+
+.footer { text-align: center; padding: 60px; color: #7f8c8d; background: #fff; border-top: 1px solid #eee; }
+
+@media (max-width: 768px) { .content-grid, .photo-gallery { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<nav>
+<a href="#home">首頁</a>
+<a href="#about">個人故事</a>
+<a href="#holland">特質分析</a>
+<a href="#skills">專業技能</a>
+<a href="#career">生涯規劃</a>
+</nav>
+
+<header id="home">
+<h1>范阮越姜</h1>
+<p>靜宜大學 資訊管理學系 | 資管二A | 學號 411314725</p>
+<p>「深耕資訊技術，傳遞有溫度的數位內容」</p>
+</header>
+
+<div class="container">
+
+<section id="about">
+<h2>關於我：跨越國界的學習旅程</h2>
+<p>你好！我是越姜，目前就讀於台灣靜宜大學資訊管理系。之所以選擇來到台灣留學，是因為我對<span class="highlight">中華文化及繁體中文</span>有著極致的熱愛。從踏上這片土地的第一天起，我就被台灣的多元與包容所吸引。</p>
+<p>在生活中，我是一個比較內向、慢熱的人。雖然在眾人面前話不多，但我習慣將情感投入到數位創作中。我曾經在 <span class="highlight">Wattpad</span> 平台上撰寫言情小說，獲得了數千名讀者的支持，這段經歷讓我學會了如何觀察人性並轉化為動人的文字。目前，我也正在經營關於在台留學生活的 <span class="highlight">Vlog 頻道</span>，記錄每一滴成長的瞬間。</p>
+<p>我的目標非常明確：在大學四年中精進專業，並在畢業後<span class="highlight">留在台灣工作</span>。希望能將我對中文的熱忱與資管的專業結合，為台灣的產業發展貢獻一份心力。</p>
+
+<div class="photo-gallery">
+<img src="photo1.jpg" alt="生活紀錄1">
+<img src="photo2.jpg" alt="生活紀錄2">
+<img src="photo3.jpg" alt="生活紀錄3">
+</div>
+<p style="text-align: center; color: #999; font-size: 0.9em;">(生活照片記錄：校園點滴、創作靈感與留學日常)</p>
+</section>
+
+<section id="holland">
+<h2>職業興趣深度分析 (Holland Code)</h2>
+<p>經過專業測驗，我的荷倫碼主要組成為 <span class="highlight">A (藝術型)</span>、<span class="highlight">S (社會型)</span> 與 <span class="highlight">R (實際型)</span>。這代表我是一個具備創造力，同時兼具感性與務實特質的人。</p>
+
+<div style="text-align: center; margin: 30px 0;">
+<svg viewBox="0 0 500 350" xmlns="http://www.w3.org/2000/svg" style="max-width:100%; background:#fff; border-radius:15px; border:1px solid #eee;">
+<rect width="500" height="350" fill="#fcfcfc"/>
+<text x="250" y="40" text-anchor="middle" font-weight="bold" font-size="20">興趣代碼：A - S - R</text>
+<g transform="translate(250,180)">
+<polygon points="0,-100 86,-50 86,50 0,100 -86,50 -86,-50" fill="none" stroke="#ddd"/>
+<line x1="0" y1="0" x2="0" y2="-100" stroke="#ddd" />
+<line x1="0" y1="0" x2="86" y2="50" stroke="#ddd" />
+<line x1="0" y1="0" x2="-86" y2="50" stroke="#ddd" />
+<text x="0" y="-115" text-anchor="middle" font-weight="bold" fill="#e67e22">A 藝術 (8分)</text>
+<text x="100" y="60" text-anchor="start" font-weight="bold" fill="#3498db">S 社會 (6分)</text>
+<text x="-100" y="60" text-anchor="end" font-weight="bold" fill="#e74c3c">R 實際 (6分)</text>
+<polygon points="0,-80 51,30 -51,30" fill="rgba(52, 152, 219, 0.3)" stroke="#3498db" stroke-width="3"/>
+</g>
+</svg>
+</div>
+
+<div class="content-grid">
+<div class="info-card">
+<span class="skill-tag">A 藝術型特質</span>
+<p>擁有強烈的創作欲望。在處理資管專案時，我能從視覺美學的角度出發，設計出美感與實用性兼具的使用者介面(UI)。我的 Wattpad 寫作經驗讓我能寫出具有感染力的行銷文案。</p>
+</div>
+<div class="info-card">
+<span class="skill-tag">S 社會型特質</span>
+<p>具備良好的團隊合作精神。雖然性格較為內斂，但在小組討論中我總是能精準聽取他人需求，扮演穩定的支持者角色。我重視職場中的人和與共感，適合從事需要理解客戶需求的工作。</p>
+</div>
+</div>
+<p style="margin-top: 20px;">這三種特質的結合，使我能在理性的邏輯架構中，融入感性的使用者體驗，這正是我在資管領域的核心競爭力。</p>
+</section>
+
+<section id="skills">
+<h2>專業技能與語言優勢</h2>
+<div class="content-grid">
+<div class="info-card">
+<h3>🛠 辦公軟體技能</h3>
+<p>我能熟練操作各項文書處理軟體，為職場實務打下堅實基礎：</p>
+<ul>
+<li><strong>Microsoft Excel：</strong> 擅長資料分析、樞紐分析表與複雜函數運算。</li>
+<li><strong>Microsoft Word：</strong> 專精於長篇企劃書排版與專業商業文書處理。</li>
+<li><strong>PowerPoint：</strong> 具備簡報設計美感，能製作吸引視覺的提案內容。</li>
+</ul>
+</div>
+<div class="info-card">
+<h3>🌐 多語能力 (Languages)</h3>
+<ul>
+<li><strong>中文 (Chinese)：</strong> 通過 <span class="highlight">TOCFL B1</span> 等級，具備流暢的職場溝通能力。</li>
+<li><strong>英文 (English)：</strong> 進修中，能閱讀專業英文資訊文件。</li>
+<li><strong>泰文 (Thai)：</strong> 興趣擴展，具備基礎對話能力。</li>
+<li><strong>越南文 (Vietnamese)：</strong> 母語，優勢溝通。</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section id="career">
+<h2>履歷表與未來展望 (Curriculum Vitae)</h2>
+<div class="info-card" style="border-left: 10px solid var(--secondary);">
+<p><strong>求職目標：</strong> 數位內容企劃 / 社群經營人員 / UI-UX 介面設計 / 雙語秘書</p>
+<p><strong>核心競爭力：</strong></p>
+<ul>
+<li><strong>跨文化優勢：</strong> 身為留學生，具備開闊的視野與極強的適應能力。</li>
+<li><strong>技術整合：</strong> 具備資管系 Python 程式開發基礎與前端網頁設計能力。</li>
+<li><strong>創意輸出：</strong> 擁有多年網路文學創作與影音剪輯經驗。</li>
+<li><strong>工作態度：</strong> 性格穩重、極度負責任，重視團隊榮譽。</li>
+</ul>
+<p><strong>個人誓言：</strong> 我渴望在台灣這片充滿活力的土地上深耕。雖然我害羞，但我會用我的專業與責任感，證明內向的力量。我已準備好為貴公司創造更多價值。</p>
+</div>
+<p style="text-align: center; margin-top: 30px;">
+<a href="https://pda.104.com.tw/profile/share/6ScSblG0zWsjfkrnlYTsz8gGanZ1nvrt" target="_blank" style="color:var(--secondary); font-weight:bold;">🔗 點擊此處查看 104 完整專業履歷</a>
+</p>
+</section>
+
+</div>
+
+<div class="footer">
+&copy; 2026 Pham Nguyen Viet Khuong 范阮越姜 <br>
+靜宜大學 資訊管理系 | 職業生涯規劃課作業
+</div>
+
+</body>
+</html>
