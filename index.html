@@ -3,141 +3,142 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>范阮越姜 | 個人職涯發展門戶</title>
+<title>范阮越姜 | 數位社群經理 Portfolio</title>
 <style>
-:root { --primary: #2c3e50; --secondary: #3498db; --accent: #e67e22; --success: #27ae60; --bg: #f0f2f5; }
+/* Tông màu hồng đẹp mắt, chuyên nghiệp */
+:root {
+--primary: #574b90; /* Tím đậm cho chữ */
+--secondary: #ff9ff3; /* Hồng pastel cho điểm nhấn */
+--accent: #f368e0; /* Hồng đậm cho nút */
+--bg: #fff5f8; /* Hồng cực nhạt cho nền */
+--card-bg: #ffffff;
+}
 * { box-sizing: border-box; scroll-behavior: smooth; }
-body { font-family: 'PingFang TC', 'Microsoft JhengHei', sans-serif; margin: 0; background: var(--bg); color: #333; line-height: 1.8; }
+body { font-family: 'PingFang TC', 'Microsoft JhengHei', sans-serif; margin: 0; background: var(--bg); color: #4a4a4a; line-height: 1.8; }
 
-/* Navigation xịn cho điểm Responsive 20% */
-nav { position: fixed; top: 0; width: 100%; background: rgba(255,255,255,0.98); backdrop-filter: blur(10px); box-shadow: 0 2px 10px rgba(0,0,0,0.1); z-index: 1000; display: flex; justify-content: center; padding: 15px 0; }
-nav a { text-decoration: none; color: var(--primary); margin: 0 20px; font-weight: bold; font-size: 0.95em; transition: 0.3s; text-transform: uppercase; letter-spacing: 1px; }
-nav a:hover { color: var(--secondary); border-bottom: 2px solid var(--secondary); }
+/* Navigation (Đáp ứng Responsive 20%) */
+nav { position: fixed; top: 0; width: 100%; background: rgba(255,255,255,0.96); backdrop-filter: blur(8px); box-shadow: 0 2px 12px rgba(255,182,193,0.3); z-index: 1000; display: flex; justify-content: center; padding: 15px 0; }
+nav a { text-decoration: none; color: var(--primary); margin: 0 18px; font-weight: bold; font-size: 0.95em; transition: 0.3s; text-transform: uppercase; letter-spacing: 1px; }
+nav a:hover { color: var(--accent); border-bottom: 2px solid var(--accent); }
 
-header { height: 65vh; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); color: white; text-align: center; flex-direction: column; padding-top: 60px; }
-header img { width: 170px; height: 170px; border-radius: 50%; object-fit: cover; border: 5px solid rgba(255,255,255,0.2); box-shadow: 0 10px 25px rgba(0,0,0,0.3); margin-bottom: 20px; transition: transform 0.5s; }
-header img:hover { transform: rotate(5deg) scale(1.05); }
-header h1 { font-size: 3.2em; margin: 0; font-weight: 800; }
+/* Header (Style mới, không giống bạn kia) */
+header { height: 70vh; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%), url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIj48ZyBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZjlmdjMiIGZpbGwtb3BhY2l0eT0iMC4xNSI+PHBhdGggZD0iTTAgMGg0MHY0MEgwVjB6bTIwIDIwaDIwdjIwSDIWMjB6TTAgMjBoMjB2MjBIMFYyMHoyMCAwaDIwdjIwSDIwVjB6Ii8+PC9nPjwvZz48L3N2Zz4='); color: var(--primary); text-align: center; flex-direction: column; padding-top: 60px; }
+header img { width: 180px; height: 180px; border-radius: 50%; object-fit: cover; border: 8px solid white; box-shadow: 0 10px 25px rgba(255,182,193,0.5); margin-bottom: 25px; transition: 0.4s; }
+header img:hover { transform: scale(1.08) rotate(3deg); }
+header h1 { font-size: 3.5em; margin: 0; font-weight: 800; background: linear-gradient(to right, #574b90, #f368e0); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 
-.container { max-width: 1100px; margin: 0 auto; padding: 50px 20px; }
-section { background: white; padding: 60px; border-radius: 25px; box-shadow: 0 15px 35px rgba(0,0,0,0.05); margin-bottom: 60px; position: relative; overflow: hidden; }
-h2 { font-size: 2.2em; color: var(--primary); margin-bottom: 35px; display: flex; align-items: center; gap: 15px; }
-h2::before { content: ''; width: 8px; height: 35px; background: var(--secondary); border-radius: 4px; }
+.container { max-width: 1100px; margin: 0 auto; padding: 60px 20px; }
+section { background: var(--card-bg); padding: 60px; border-radius: 30px; box-shadow: 0 15px 40px rgba(255,182,193,0.15); margin-bottom: 70px; border: 1px solid #fff0f5; position: relative; }
+h2 { font-size: 2.3em; color: var(--primary); margin-bottom: 40px; display: flex; align-items: center; gap: 15px; }
+h2::before { content: ''; width: 12px; height: 35px; background: var(--secondary); border-radius: 6px; }
 
-/* Bảng Holland Hoành Tráng */
-.holland-hero { background: #f8fbff; border: 2px solid #e1e8f0; border-radius: 20px; padding: 30px; margin-bottom: 30px; display: grid; grid-template-columns: 1.2fr 1fr; gap: 30px; align-items: center; }
-.stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
-.stat-card { background: white; padding: 15px; border-radius: 12px; border: 1px solid #eee; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.02); }
-.stat-card h4 { margin: 0; color: var(--secondary); font-size: 1.4em; }
-.stat-card span { font-size: 0.8em; color: #7f8c8d; font-weight: bold; }
+/* Holland Chart (Hoành tráng hơn) */
+.holland-grid { display: grid; grid-template-columns: 1.3fr 1fr; gap: 40px; align-items: center; background: #fffafc; border-radius: 20px; padding: 30px; border: 1px solid #fce4ec; }
+.stat-item { background: white; padding: 15px; border-radius: 12px; border: 1px solid #f8bbd0; text-align: center; margin-bottom: 10px; }
+.stat-item h4 { margin: 0; color: var(--accent); font-size: 1.5em; }
 
-/* Job Analysis */
-.job-card { border-left: 5px solid var(--accent); background: #fffcf9; padding: 25px; border-radius: 0 15px 15px 0; margin-bottom: 20px; }
-.tag-group { display: flex; flex-wrap: wrap; gap: 10px; margin: 15px 0; }
-.tag { background: #eef2f7; color: #34495e; padding: 6px 16px; border-radius: 50px; font-size: 0.85em; font-weight: 600; }
+/* Job & Bio (Nội dung đa dạng) */
+.info-card { border-left: 6px solid var(--accent); background: #fff5f8; padding: 30px; border-radius: 0 20px 20px 0; margin-bottom: 30px; }
+.tag { background: white; color: var(--accent); padding: 6px 16px; border-radius: 50px; font-size: 0.85em; font-weight: 700; border: 1px solid #f8bbd0; margin-right: 8px; display: inline-block; margin-bottom: 5px; }
 
-/* Bio Nội dung đa dạng */
-.bio-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
-.bio-item h3 { color: var(--secondary); margin-top: 0; }
-.highlight-text { color: var(--accent); font-weight: bold; font-style: italic; }
+.bio-list { list-style: none; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+.bio-item h4 { color: var(--primary); margin-bottom: 10px; font-size: 1.2em; display: flex; align-items: center; gap: 10px; }
+.highlight { color: var(--accent); font-weight: bold; }
 
-footer { text-align: center; padding: 60px; color: #7f8c8d; background: #fff; border-top: 1px solid #eee; }
+footer { text-align: center; padding: 70px; color: #888; background: #fff; border-top: 1px solid #eee; }
 
-@media (max-width: 850px) { .holland-hero, .bio-grid { grid-template-columns: 1fr; } header h1 { font-size: 2.2em; } }
+/* Mobile Responsive */
+@media (max-width: 850px) {
+.holland-grid, .bio-list { grid-template-columns: 1fr; }
+header h1 { font-size: 2.5em; }
+section { padding: 40px 20px; }
+}
 </style>
 </head>
 <body>
 
 <nav>
-<a href="#home">首頁</a>
-<a href="#holland">職業興趣</a>
-<a href="#job">MIS工作分析</a>
-<a href="#about">自傳履歷</a>
+<a href="#home">HOME</a>
+<a href="#holland">荷倫碼測試</a>
+<a href="#job">職涯目標</a>
+<a href="#about">自傳經歷</a>
 </nav>
 
 <header id="home">
-<img src="me.jpg" alt="Pham Nguyen Viet Khuong">
+<img src="photo1.jpg" alt="Pham Nguyen Viet Khuong">
 <h1>范阮越姜</h1>
-<p>資管二A | 411314725 | 靜宜大學資訊管理系</p>
-<p style="letter-spacing: 3px; font-weight: 300; opacity: 0.8;">BEYOND DATA, WITHIN STORIES</p>
+<p>靜宜大學 資管二A | 411314725</p>
+<p style="letter-spacing: 2px; color: #777;">「用創意的社群故事，連結遊戲與人心」</p>
 </header>
 
 <div class="container">
 
 <section id="holland">
-<h2>Holland 荷倫碼測驗結果分析</h2>
-<div class="holland-hero">
+<h2>HOLLAND 荷倫碼興趣分析</h2>
+<div class="holland-grid">
 <div>
-<h3 style="color:var(--primary);">測驗類型：<span style="color:var(--accent);">A - 藝術型</span> & <span style="color:var(--secondary);">S - 社會型</span></h3>
-<p>根據 104 職涯興趣測驗結果，我展現出鮮明的「感性創作」與「人群關懷」特質。我的核心動能來自於創造具備美感的內容，並以此與社會產生正面連結。</p>
-<div class="stat-grid">
-<div class="stat-card"><span>Artistic</span><h4>8 / 10</h4></div>
-<div class="stat-card"><span>Social</span><h4>6 / 10</h4></div>
-<div class="stat-card"><span>Realistic</span><h4>6 / 10</h4></div>
-<div class="stat-card"><span>Investigative</span><h4>4 / 10</h4></div>
+<h3 style="color:var(--primary);">核心代碼：<span style="color:var(--accent);">A 藝術型</span> & <span style="color:var(--secondary);">S 社會型</span></h3>
+<p>測驗結果精確地描繪了我的雙重性格：一方面我擁有極強的藝術直覺與創作渴望(A)；另一方面，我熱衷於人際互動與社群經營(S)。這讓我非常適合從事需要將創意與人群連結的工作。</p>
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:15px; margin-top:20px;">
+<div class="stat-item"><span>藝術 Artistic</span><h4>8 / 10</h4></div>
+<div class="stat-item"><span>社會 Social</span><h4>6 / 10</h4></div>
+<div class="stat-item"><span>實際 Realistic</span><h4>6 / 10</h4></div>
 </div>
 </div>
-<div style="background: white; border-radius: 15px; padding: 20px; box-shadow: inset 0 0 10px rgba(0,0,0,0.05);">
+<div style="background: white; border-radius: 15px; padding: 20px; box-shadow: inset 0 0 10px rgba(255,182,193,0.1);">
 <svg viewBox="0 0 200 200" style="width: 100%; height: auto;">
-<polygon points="100,20 180,70 180,130 100,180 20,130 20,70" fill="none" stroke="#ddd" stroke-width="1"/>
-<line x1="100" y1="100" x2="100" y2="20" stroke="#eee" />
-<line x1="100" y1="100" x2="180" y2="70" stroke="#eee" />
-<line x1="100" y1="100" x2="180" y2="130" stroke="#eee" />
-<line x1="100" y1="100" x2="100" y2="180" stroke="#eee" />
-<line x1="100" y1="100" x2="20" y2="130" stroke="#eee" />
-<line x1="100" y1="100" x2="20" y2="70" stroke="#eee" />
-<polygon points="100,36 148,82 148,118 100,148 52,118 40,79" fill="rgba(52, 152, 219, 0.3)" stroke="var(--secondary)" stroke-width="2"/>
-<text x="100" y="15" text-anchor="middle" font-size="10" fill="var(--accent)" font-weight="bold">藝術 A</text>
-<text x="185" y="140" text-anchor="start" font-size="10" fill="#7f8c8d">實際 R</text>
-<text x="15" y="65" text-anchor="end" font-size="10" fill="var(--secondary)" font-weight="bold">社會 S</text>
+<polygon points="100,20 180,70 180,130 100,180 20,130 20,70" fill="none" stroke="#fcdde6" stroke-width="1"/>
+<polygon points="100,36 148,82 148,118 100,148 52,118 40,79" fill="rgba(255, 159, 243, 0.3)" stroke="var(--accent)" stroke-width="2"/>
+<text x="100" y="15" text-anchor="middle" font-size="12" fill="var(--accent)" font-weight="bold">藝術 A</text>
+<text x="20" y="65" text-anchor="end" font-size="10" fill="var(--primary)">社會 S</text>
 </svg>
 </div>
 </div>
-<div class="tag-group">
-<span class="tag">適合：媒體社群行銷</span> <span class="tag">適合：藝文創作</span> <span class="tag">適合：前端開發</span> <span class="tag">適合：翻譯人員</span>
+<div class="tag-group" style="margin-top:25px; text-align:center;">
+<span class="tag">適合：社群媒體經營</span> <span class="tag">適合：數位內容創作</span> <span class="tag">適合：跨文化溝通</span>
 </div>
 </section>
 
 <section id="job">
-<h2>MIS 相關工作契合度分析</h2>
-<div class="job-card">
-<h3>目標職位：<span style="color:var(--secondary);">網頁前端工程師 / 數位內容經營</span></h3>
-<p><strong>工作需求：</strong> 此職位不僅需要精通 HTML/CSS 與 JavaScript 等資訊技術，更需要極佳的視覺感受力（UX/UI）來優化使用者體驗，以及良好的跨團隊溝通能力。</p>
-<p><strong>為何我適合：</strong> 我的 <span class="highlight-text">A (藝術型)</span> 特質確保我能設計出符合美學且易用的介面；而 <span class="highlight-text">S (社會型)</span> 特質則讓我在與客戶或 PM 溝通需求時，能精準捕捉使用者痛點，這正是 MIS 領域中「資訊與人」結合的最佳體現。</p>
+<h2>MIS 職涯目標：遊戲社群經理</h2>
+<div class="info-card">
+<h3>目標職位：<span style="color:var(--accent);">Social Media Manager (社群媒體經理)</span></h3>
+<p><strong>產業與公司類型：</strong> 我希望在畢業後進入<strong>遊戲產業</strong>公司實習。遊戲是一個充滿創意與熱情的領域，非常契合我的 A 特質。</p>
+<p><strong>工作契合度：</strong> 身為一位 Vlogger 與 Wattpad 作者，我懂得以故事吸引讀者(A)；而在 MIS 系學到的 Python 技術與資料分析，能幫助我理性分析社群數據、優化策略。我希望能利用我的跨文化背景，幫助遊戲公司經營更具包容性的國際社群。</p>
 </div>
-<div style="margin-top: 30px; text-align: center;">
-<img src="photo2.jpg" alt="Study Record" style="width: 80%; border-radius: 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.1);">
-<p style="font-size: 0.9em; color: #999;">(圖示：個人專案開發與職涯規劃紀錄)</p>
+<div style="margin-top: 35px; text-align: center;">
+<img src="photo2.jpg" alt="Work Record" style="width: 85%; border-radius: 20px; box-shadow: 0 10px 25px rgba(255,182,193,0.2); border: 4px solid white;">
+<p style="font-size: 0.9em; color: #999; margin-top: 10px;">(圖示：個人社群專案與職涯規劃學習紀錄)</p>
 </div>
 </section>
 
 <section id="about">
-<h2>關於我：跨國背景下的數位創作者</h2>
-<div class="bio-grid">
-<div class="bio-item">
-<h3>📚 創作者基因</h3>
-<p>我曾是 <span class="highlight-text">Wattpad</span> 上的熱門小說作者，這段經歷並非只是愛好，它訓練了我強大的邏輯敘事能力。在編寫程式碼時，我習慣將其視為「說故事」，確保每個模組都流暢且有目的性。</p>
+<h2>關於我：用熱情連結世界的資管創作者</h2>
+<ul class="bio-list">
+<li class="bio-item">
+<h4>📝 數位創作基因 (Wattpad & Vlog)</h4>
+<p>我曾是 <span class="highlight">Wattpad</span> 上的小說作者，擁有豐富的敘事經驗與讀者經營基礎。目前我積極經營留學生活 <span class="highlight">Vlog</span>，從拍攝、剪輯到社群互動，獨立完成數位內容經營的全流程。這展現了我對數位行銷的敏銳度。</p>
 </div>
-<div class="bio-item">
-<h3>🎥 留學生活觀察家</h3>
-<p>身為一名在台留學生，我經營著個人 <span class="highlight-text">Vlog 頻道</span>。從腳本構思到剪輯，我獨立完成了數位媒體的全流程操作。這不僅展現了我的技術應用，更展現了我對多元文化的適應力與觀察力。</p>
+<li class="bio-item">
+<h4>🌍 國際Buddy與跨文化適應</h4>
+<p>雖然性格內向，但我熱衷於社會服務。我常參與靜宜大學的<strong>國際生協助活動</strong>，擔任「Buddy」角色，幫助新生辦理入學手續、辦理 ARC 與郵局提款卡，並帶領他們適應台灣的新環境。這段經歷磨練了我的溝通技能與跨文化共感力(S)。</p>
 </div>
-<div class="bio-item">
-<h3>🤝 責任感與團隊合作</h3>
-<p>雖然我性格慢熱、內向，但我深知「誠信」與「責任」在資管領域的重要性。在每一次的課程專題中，我始終堅持準時交付任務，並在靜謐中提供最穩定的技術支援。</p>
+<li class="bio-item">
+<h4>🤝 團隊責任與執行力</h4>
+<p>我深知在資管領域「誠信」與「準時」的重要性。在每一次的課程專題小組中，我始終堅持絕對的<span class="highlight">負責任</span>態度，不論話多話少，皆能在靜謐中提供最穩定的技術支援，並準時提交高品質任務。</p>
 </div>
-<div class="bio-item">
-<h3>🌍 國際視野與語言能力</h3>
-<p>除了 MIS 專業科目，我正積極精進 <strong>Python、英語與泰語</strong>。我的目標是將資訊技術帶入跨國文化傳播，成為一名具備國際競爭力的資管人才。</p>
+<li class="bio-item">
+<h4>🚀 自我提升與未來展望</h4>
+<p>我不斷精進 <strong>Python</strong> 程式邏輯，並同時學習<strong>英語與泰語</strong>。我希望結合藝術感性、社會共感與資管技術，成為一名能在國際遊戲社群中創造有溫度連結的社群專業人才。</p>
 </div>
-</div>
+</ul>
 </section>
 
 </div>
 
 <footer>
-<p>&copy; 2026 Pham Nguyen Viet Khuong. <br> 靜宜大學 資訊管理系 | 職涯規劃課程作業</p>
-<p><a href="https://pda.104.com.tw/profile/share/6ScSblG0zWsjfkrnlYTsz8gGanZ1nvrt" target="_blank" style="color:var(--secondary); text-decoration:none; font-weight:bold;">🔗 點此查看 104 完整履歷</a></p>
+<p>&copy; 2026 Pham Nguyen Viet Khuong. <br> 靜宜大學 資訊管理系 | 職涯規劃專題作業</p>
+<p><a href="https://pda.104.com.tw/profile/share/6ScSblG0zWsjfkrnlYTsz8gGanZ1nvrt" target="_blank" style="color:var(--accent); text-decoration:none; font-weight:bold;">🔗 點此查看我在 104 的完整履歷</a></p>
 </footer>
 
 </body>
